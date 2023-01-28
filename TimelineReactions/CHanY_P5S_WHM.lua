@@ -146,6 +146,65 @@ local tbl =
 			},
 		},
 	},
+	[3] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							castPosX = 100,
+							castPosY = -300,
+							castPosZ = 100,
+							conditions = 
+							{
+								
+								{
+									"cda6d361-47d4-82d0-8029-52d6d09a43ea",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWHM2_Healbar_Lilybell",
+							isAreaTarget = true,
+							showPositionPreview = true,
+							uuid = "77cc2977-5fc3-2f53-a9be-0e0577995978",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 25863,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "cda6d361-47d4-82d0-8029-52d6d09a43ea",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 22,
+				name = "坟头草",
+				timeRange = true,
+				timelineIndex = 3,
+				timerOffset = -5,
+				timerStartOffset = -5,
+				uuid = "33f65c27-fc45-3b8d-ad7a-b22929281645",
+				version = 2,
+			},
+		},
+	},
 	[8] = 
 	{
 		
@@ -6779,9 +6838,9 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
-							castPosX = -651.91229248047,
-							castPosY = 16.019998550415,
-							castPosZ = -795.73303222656,
+							castPosX = 100,
+							castPosY = -300,
+							castPosZ = 100,
 							conditions = 
 							{
 								
@@ -6790,7 +6849,8 @@ local tbl =
 									true,
 								},
 							},
-							gVar = "ACR_RikuWHM2_Healbar_LilybellAuto",
+							gVar = "ACR_RikuWHM2_Healbar_Lilybell",
+							isAreaTarget = true,
 							uuid = "77cc2977-5fc3-2f53-a9be-0e0577995978",
 							variableTogglesType = 3,
 							version = 2,
