@@ -73,9 +73,9 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
-							castPosX = -651.91229248047,
-							castPosY = 16.019998550415,
-							castPosZ = -795.73303222656,
+							castPosX = 100,
+							castPosY = -300,
+							castPosZ = 100,
 							conditions = 
 							{
 								
@@ -84,7 +84,9 @@ local tbl =
 									true,
 								},
 							},
-							gVar = "ACR_RikuWHM2_Healbar_LilybellAuto",
+							gVar = "ACR_RikuWHM2_Healbar_Lilybell",
+							isAreaTarget = true,
+							showPositionPreview = true,
 							uuid = "77cc2977-5fc3-2f53-a9be-0e0577995978",
 							variableTogglesType = 3,
 							version = 2,
@@ -108,7 +110,6 @@ local tbl =
 				},
 				mechanicTime = 14.9,
 				name = "坟头草",
-				timeRange = true,
 				timelineIndex = 2,
 				timerEndOffset = 4,
 				timerStartOffset = -2,
@@ -591,6 +592,7 @@ local tbl =
 						{
 							aType = "Variable",
 							castPosX = 100,
+							castPosY = -300,
 							castPosZ = 100,
 							conditions = 
 							{
@@ -600,7 +602,9 @@ local tbl =
 									true,
 								},
 							},
-							gVar = "ACR_RikuWHM2_Healbar_AsylumAuto",
+							gVar = "ACR_RikuWHM2_Healbar_Asylum",
+							isAreaTarget = true,
+							showPositionPreview = true,
 							uuid = "3ddf60dd-c332-6d82-8ed0-b347a8031399",
 							variableTogglesType = 3,
 							version = 2,
@@ -1351,11 +1355,6 @@ local tbl =
 									"608f9686-d9e4-c67d-9881-c31c8b71585b",
 									true,
 								},
-								
-								{
-									"09832e80-57ec-5f3c-a9c5-48e73c4fb7f6",
-									true,
-								},
 							},
 							gVar = "ACR_RikuWHM2_Healbar_AfflatusRapture",
 							uuid = "ac1159cf-c8eb-6403-8b07-b91220ca4ae7",
@@ -1375,17 +1374,6 @@ local tbl =
 							gaugeIndex = 2,
 							gaugeValue = 1,
 							uuid = "608f9686-d9e4-c67d-9881-c31c8b71585b",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 5,
-							lastSkillID = 7433,
-							uuid = "09832e80-57ec-5f3c-a9c5-48e73c4fb7f6",
 							version = 2,
 						},
 					},
@@ -1672,6 +1660,7 @@ local tbl =
 						{
 							aType = "Variable",
 							castPosX = 100,
+							castPosY = -300,
 							castPosZ = 100,
 							conditions = 
 							{
@@ -1681,7 +1670,8 @@ local tbl =
 									true,
 								},
 							},
-							gVar = "ACR_RikuWHM2_Healbar_AsylumAuto",
+							gVar = "ACR_RikuWHM2_Healbar_Asylum",
+							isAreaTarget = true,
 							uuid = "3ddf60dd-c332-6d82-8ed0-b347a8031399",
 							variableTogglesType = 3,
 							version = 2,
@@ -1727,6 +1717,7 @@ local tbl =
 						{
 							aType = "Variable",
 							castPosX = 100,
+							castPosY = -300,
 							castPosZ = 100,
 							conditions = 
 							{
@@ -2255,9 +2246,9 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
-							castPosX = -651.91229248047,
-							castPosY = 16.019998550415,
-							castPosZ = -795.73303222656,
+							castPosX = 100,
+							castPosY = -300,
+							castPosZ = 100,
 							conditions = 
 							{
 								
@@ -2266,7 +2257,8 @@ local tbl =
 									true,
 								},
 							},
-							gVar = "ACR_RikuWHM2_Healbar_LilybellAuto",
+							gVar = "ACR_RikuWHM2_Healbar_Lilybell",
+							isAreaTarget = true,
 							uuid = "77cc2977-5fc3-2f53-a9be-0e0577995978",
 							variableTogglesType = 3,
 							version = 2,
@@ -3530,6 +3522,7 @@ local tbl =
 						{
 							aType = "Variable",
 							castPosX = 100,
+							castPosY = -300,
 							castPosZ = 100,
 							conditions = 
 							{
@@ -3539,7 +3532,8 @@ local tbl =
 									true,
 								},
 							},
-							gVar = "ACR_RikuWHM2_Healbar_AsylumAuto",
+							gVar = "ACR_RikuWHM2_Healbar_Asylum",
+							isAreaTarget = true,
 							uuid = "3ddf60dd-c332-6d82-8ed0-b347a8031399",
 							variableTogglesType = 3,
 							version = 2,
@@ -4710,6 +4704,7 @@ local tbl =
 						{
 							aType = "Variable",
 							castPosX = 100,
+							castPosY = -300,
 							castPosZ = 100,
 							conditions = 
 							{
@@ -4719,7 +4714,8 @@ local tbl =
 									true,
 								},
 							},
-							gVar = "ACR_RikuWHM2_Healbar_AsylumAuto",
+							gVar = "ACR_RikuWHM2_Healbar_Asylum",
+							isAreaTarget = true,
 							uuid = "3ddf60dd-c332-6d82-8ed0-b347a8031399",
 							variableTogglesType = 3,
 							version = 2,
@@ -6009,6 +6005,7 @@ local tbl =
 						{
 							aType = "Variable",
 							castPosX = 100,
+							castPosY = -300,
 							castPosZ = 100,
 							conditions = 
 							{
@@ -6018,7 +6015,8 @@ local tbl =
 									true,
 								},
 							},
-							gVar = "ACR_RikuWHM2_Healbar_AsylumAuto",
+							gVar = "ACR_RikuWHM2_Healbar_Asylum",
+							isAreaTarget = true,
 							uuid = "3ddf60dd-c332-6d82-8ed0-b347a8031399",
 							variableTogglesType = 3,
 							version = 2,
