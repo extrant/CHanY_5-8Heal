@@ -4181,6 +4181,55 @@ local tbl =
 					{
 						data = 
 						{
+							actionID = 16535,
+							conditions = 
+							{
+								
+								{
+									"4bd702b2-c01b-1d6d-a5c1-1276e5f65145",
+									true,
+								},
+							},
+							targetType = "Enemy",
+							uuid = "29174771-792e-9f0c-be1a-d8047501e4a2",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 6,
+							gaugeIndex = 3,
+							gaugeValue = 3,
+							uuid = "4bd702b2-c01b-1d6d-a5c1-1276e5f65145",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 270.3,
+				name = "Red Flower",
+				timelineIndex = 53,
+				timerOffset = -4,
+				uuid = "c3bc6333-8e4d-5927-a772-34ac3ef40fe0",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
 							aType = "Variable",
 							conditions = 
 							{
@@ -4222,55 +4271,6 @@ local tbl =
 				uuid = "0512c051-b9ad-eb59-8f42-c5230fecf7d9",
 				version = 2,
 			},
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 16535,
-							conditions = 
-							{
-								
-								{
-									"4bd702b2-c01b-1d6d-a5c1-1276e5f65145",
-									true,
-								},
-							},
-							targetType = "Enemy",
-							uuid = "29174771-792e-9f0c-be1a-d8047501e4a2",
-							version = 2,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 6,
-							gaugeIndex = 3,
-							gaugeValue = 3,
-							uuid = "4bd702b2-c01b-1d6d-a5c1-1276e5f65145",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 270.3,
-				name = "Red Flower",
-				timelineIndex = 53,
-				timerOffset = -4,
-				uuid = "c3bc6333-8e4d-5927-a772-34ac3ef40fe0",
-				version = 2,
-			},
-			inheritedIndex = 2,
 		},
 	},
 	[57] = 
@@ -5164,6 +5164,61 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							conditions = 
+							{
+								
+								{
+									"6e47398d-9fda-f9d8-ab68-6071b2726d5b",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWHM2_Healbar_Regen",
+							targetType = "Main Tank",
+							uuid = "f30e3ec4-23f6-2f19-a62b-3bbd911b2ff7",
+							variableIsHover = true,
+							variableTogglesType = 3,
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 2,
+							hpValue = 80,
+							partyTargetType = "Main Tank",
+							uuid = "6e47398d-9fda-f9d8-ab68-6071b2726d5b",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 339.2,
+				name = "再生",
+				timeRange = true,
+				timelineIndex = 68,
+				timerEndOffset = 10,
+				timerStartOffset = 3,
+				uuid = "a9083b6a-f49b-c440-abf6-56c3d9285866",
+				version = 2,
+			},
+		},
 	},
 	[69] = 
 	{
@@ -5530,6 +5585,47 @@ local tbl =
 	},
 	[76] = 
 	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWHM2_Healbar_PlenaryIndulgence",
+							uuid = "64141147-2ab5-7203-b4ba-dd904cb50953",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7433,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "8fd7fa9a-5db7-aa94-9e0c-71750a419965",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 383.8,
+				name = "全大赦",
+				timelineIndex = 76,
+				uuid = "82fa595a-acc9-5345-8b8d-426cb457bbde",
+				version = 2,
+			},
+			inheritedIndex = 5,
+		},
 		
 		{
 			data = 
@@ -8661,6 +8757,36 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWHM2_Healbar_Regen",
+							targetType = "Off Tank",
+							uuid = "f30e3ec4-23f6-2f19-a62b-3bbd911b2ff7",
+							variableIsHover = true,
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 544.1,
+				name = "再生",
+				timelineIndex = 101,
+				uuid = "78386d25-17f3-636a-823c-23041e152b82",
+				version = 2,
+			},
+		},
 	},
 	[102] = 
 	{
@@ -8860,6 +8986,23 @@ local tbl =
 				version = 2,
 			},
 			inheritedIndex = 3,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 551.2,
+				name = "[毁灭吧]",
+				timelineIndex = 102,
+				uuid = "a8ad5282-736e-7b32-9c03-fd8d199e127e",
+				version = 2,
+			},
 		},
 	},
 	[103] = 
@@ -9061,7 +9204,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 571.7,
-				name = "没救了等死吧",
+				name = "[毁灭吧]",
 				timelineIndex = 105,
 				uuid = "59e2b8ff-849c-cf4c-961d-20fe84653635",
 				version = 2,
@@ -9121,7 +9264,7 @@ local tbl =
 				{
 				},
 				mechanicTime = 574.8,
-				name = "没救了等死吧",
+				name = "[毁灭吧]",
 				timelineIndex = 106,
 				uuid = "779df96a-abdb-52d7-b61a-f906cb7f40e0",
 				version = 2,
@@ -9141,9 +9284,43 @@ local tbl =
 				{
 				},
 				mechanicTime = 577.9,
-				name = "没救了等死吧",
+				name = "[毁灭吧]",
 				timelineIndex = 107,
 				uuid = "527f593b-319d-7326-b033-5a9431576a47",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 577.9,
+				name = "「破灭の爆裂疾风弹」",
+				timelineIndex = 107,
+				uuid = "b1ccb51a-daff-a175-bbf6-f2e11308e016",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 577.9,
+				name = "通常召唤「岩石巨兵」，ATK：1300，DEF：2000",
+				timelineIndex = 107,
+				uuid = "c69c22fb-df82-c096-86b1-b43655e3abd8",
 				version = 2,
 			},
 		},
