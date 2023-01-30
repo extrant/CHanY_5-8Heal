@@ -275,7 +275,7 @@ local tbl =
 				timeRange = true,
 				timelineIndex = 8,
 				timerOffset = -5,
-				timerStartOffset = -5,
+				timerStartOffset = -7,
 				uuid = "9fc5ed44-75a3-cb97-9d2b-9e4438c9628e",
 				version = 2,
 			},
@@ -328,7 +328,7 @@ local tbl =
 				mechanicTime = 56.3,
 				name = "单盾",
 				timelineIndex = 8,
-				timerOffset = -4.5,
+				timerOffset = -10.5,
 				uuid = "9448dbd3-e0e6-ed13-a475-ee09f33714be",
 				version = 2,
 			},
@@ -385,6 +385,36 @@ local tbl =
 				timerEndOffset = 5,
 				timerOffset = 1,
 				uuid = "5393fa67-e991-ebf0-bbbd-a08930a6d978",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWHM2_Healbar_Regen",
+							targetType = "Off Tank",
+							uuid = "f30e3ec4-23f6-2f19-a62b-3bbd911b2ff7",
+							variableIsHover = true,
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 56.3,
+				name = "再生",
+				timelineIndex = 8,
+				uuid = "916953a4-fbe1-bf06-b737-8808034e720a",
 				version = 2,
 			},
 		},
@@ -470,6 +500,7 @@ local tbl =
 				mechanicTime = 63.5,
 				name = "单盾",
 				timelineIndex = 9,
+				timerOffset = -2,
 				uuid = "67d3651f-f165-021a-b787-23a96ed19d49",
 				version = 2,
 			},
@@ -689,12 +720,71 @@ local tbl =
 				name = "奶罩",
 				timeRange = true,
 				timelineIndex = 9,
-				timerEndOffset = -3,
+				timerEndOffset = 2,
 				timerOffset = -1,
-				timerStartOffset = -1,
+				timerStartOffset = -4,
 				uuid = "412e77e0-3be8-3a6c-a7a7-33b30e3297d3",
 				version = 2,
 			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 3569,
+							allowInterrupt = true,
+							castPosX = 100,
+							castPosY = -300,
+							castPosZ = 100,
+							conditions = 
+							{
+								
+								{
+									"a6c5993e-2c8e-2541-8414-278948d31cce",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWHM2_Healbar_Asylum",
+							ignoreWeaveRules = true,
+							isAreaTarget = true,
+							uuid = "3ddf60dd-c332-6d82-8ed0-b347a8031399",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 3569,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "a6c5993e-2c8e-2541-8414-278948d31cce",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 63.5,
+				name = "奶罩再尝试",
+				timeRange = true,
+				timelineIndex = 9,
+				timerEndOffset = 2,
+				timerOffset = -1,
+				timerStartOffset = -4,
+				uuid = "4c995429-e953-6608-885d-544ca0ad3afb",
+				version = 2,
+			},
+			inheritedIndex = 6,
 		},
 		
 		{
@@ -769,6 +859,52 @@ local tbl =
 				timerEndOffset = 7,
 				timerStartOffset = 0.5,
 				uuid = "574ddcc1-6525-caf0-aba1-872fc63ff25b",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWHM2_Healbar_Regen",
+							targetType = "Main Tank",
+							uuid = "f30e3ec4-23f6-2f19-a62b-3bbd911b2ff7",
+							variableIsHover = true,
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 2,
+							hpValue = 70,
+							mpValue = 70,
+							partyTargetType = "Main Tank",
+							uuid = "9f3f060b-0806-3f30-a159-639f365c32e4",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 63.5,
+				name = "再生",
+				timeRange = true,
+				timelineIndex = 9,
+				timerEndOffset = 10,
+				uuid = "91cd95bb-b3a5-e04d-8193-039aad25d43a",
 				version = 2,
 			},
 		},
@@ -957,6 +1093,78 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
+							conditions = 
+							{
+								
+								{
+									"a4d6e2d5-2616-eda0-8272-530fdd1b25b6",
+									true,
+								},
+								
+								{
+									"617a6fdb-702e-10e8-b813-199ada58bbe7",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWHM2_Healbar_Benediction",
+							targetType = "Off Tank",
+							uuid = "7863b477-6fe7-4f8e-a233-fe3be4560e4b",
+							variableIsHover = true,
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 140,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "a4d6e2d5-2616-eda0-8272-530fdd1b25b6",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 2,
+							hpValue = 40,
+							partyTargetType = "Off Tank",
+							uuid = "617a6fdb-702e-10e8-b813-199ada58bbe7",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 94.1,
+				name = "天赐",
+				timeRange = true,
+				timelineIndex = 11,
+				timerEndOffset = 16,
+				uuid = "656d5c4e-b2c1-47f9-a7ba-0792b652cfc9",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
 							gVar = "ACR_RikuWHM2_Healbar_DivineBenison",
 							targetType = "Main Tank",
 							uuid = "c99456f4-45f9-b194-8bb0-9143eb142038",
@@ -972,7 +1180,7 @@ local tbl =
 				mechanicTime = 94.1,
 				name = "单盾_Try",
 				timelineIndex = 11,
-				timerOffset = -5,
+				timerOffset = -10,
 				uuid = "65e1ff8a-80e0-ebc9-8741-7780de0611ae",
 				version = 2,
 			},
@@ -1036,7 +1244,7 @@ local tbl =
 							category = "Self",
 							conditionType = 6,
 							gaugeIndex = 2,
-							gaugeValue = 3,
+							gaugeValue = 2,
 							uuid = "297bbfbd-28f6-b0be-b20f-3865a18d737b",
 							version = 2,
 						},
@@ -1127,6 +1335,36 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWHM2_Healbar_Regen",
+							targetType = "Off Tank",
+							uuid = "f30e3ec4-23f6-2f19-a62b-3bbd911b2ff7",
+							variableIsHover = true,
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 94.1,
+				name = "再生",
+				timelineIndex = 11,
+				uuid = "8eee8f0d-0baa-1a8d-9c4a-cc80aea2bb5d",
+				version = 2,
+			},
+		},
 	},
 	[12] = 
 	{
@@ -1189,7 +1427,7 @@ local tbl =
 							category = "Self",
 							conditionType = 6,
 							gaugeIndex = 2,
-							gaugeValue = 2,
+							gaugeValue = 1,
 							uuid = "297bbfbd-28f6-b0be-b20f-3865a18d737b",
 							version = 2,
 						},
@@ -1204,6 +1442,78 @@ local tbl =
 				uuid = "06e062ef-c202-8b51-a651-2e618ef0be14",
 				version = 2,
 			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							conditions = 
+							{
+								
+								{
+									"a4d6e2d5-2616-eda0-8272-530fdd1b25b6",
+									true,
+								},
+								
+								{
+									"617a6fdb-702e-10e8-b813-199ada58bbe7",
+									true,
+								},
+							},
+							endIfUsed = true,
+							gVar = "ACR_RikuWHM2_Healbar_Benediction",
+							targetType = "Main Tank",
+							uuid = "7863b477-6fe7-4f8e-a233-fe3be4560e4b",
+							variableIsHover = true,
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 140,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "a4d6e2d5-2616-eda0-8272-530fdd1b25b6",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 2,
+							hpValue = 40,
+							partyTargetType = "Main Tank",
+							uuid = "617a6fdb-702e-10e8-b813-199ada58bbe7",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 101.3,
+				name = "天赐",
+				timeRange = true,
+				timelineIndex = 12,
+				timerEndOffset = 16,
+				uuid = "c11b0624-56aa-fce7-bac9-0010edbeeeea",
+				version = 2,
+			},
+			inheritedIndex = 2,
 		},
 		
 		{
@@ -1361,6 +1671,52 @@ local tbl =
 				timerEndOffset = 7,
 				timerStartOffset = 0.5,
 				uuid = "77741f77-37a6-4fa6-85ea-59f31e125ed0",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWHM2_Healbar_Regen",
+							targetType = "Main Tank",
+							uuid = "f30e3ec4-23f6-2f19-a62b-3bbd911b2ff7",
+							variableIsHover = true,
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 2,
+							hpValue = 70,
+							mpValue = 70,
+							partyTargetType = "Main Tank",
+							uuid = "9f3f060b-0806-3f30-a159-639f365c32e4",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 101.3,
+				name = "再生",
+				timeRange = true,
+				timelineIndex = 12,
+				timerEndOffset = 10,
+				uuid = "3a6945a8-8ad4-b597-a0ed-5a8a0e779531",
 				version = 2,
 			},
 		},
@@ -1620,6 +1976,7 @@ local tbl =
 				timeRange = true,
 				timelineIndex = 17,
 				timerEndOffset = 2,
+				timerStartOffset = -3,
 				uuid = "8cb938f5-9d4e-3f5f-9be4-6d0aaa7537e0",
 				version = 2,
 			},
@@ -1637,7 +1994,68 @@ local tbl =
 					{
 						data = 
 						{
+							aType = "Variable",
+							conditions = 
+							{
+								
+								{
+									"08223d84-c427-4cef-b7aa-424bf498e007",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWHM2_Healbar_AfflatusRapture",
+							uuid = "d7aa5a9e-3042-4289-938c-115cf79a26b3",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							comparator = 2,
+							conditionType = 2,
+							hpValue = 90,
+							uuid = "08223d84-c427-4cef-b7aa-424bf498e007",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 135.2,
+				name = "群抬Blue Flower",
+				timeRange = true,
+				timelineIndex = 18,
+				timerEndOffset = 3,
+				timerOffset = -3,
+				timerStartOffset = -3,
+				uuid = "b5de754f-86fc-f022-bf86-dd2affee1172",
+				version = 2,
+			},
+			inheritedIndex = 1,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
 							actionID = 16535,
+							conditions = 
+							{
+								
+								{
+									"4e3b1bfc-efb7-287c-87a2-dc2453963545",
+									true,
+								},
+							},
 							targetType = "Enemy",
 							uuid = "d166c91f-948b-99df-b32c-9c989bb911f6",
 							version = 2,
@@ -1646,11 +2064,23 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 6,
+							gaugeIndex = 3,
+							gaugeValue = 3,
+							uuid = "4e3b1bfc-efb7-287c-87a2-dc2453963545",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 135.2,
 				name = "Red Flower",
 				timelineIndex = 18,
-				timerOffset = 2,
+				timerOffset = 3,
 				uuid = "942bcee3-9838-5532-99e7-bceab53d1ccb",
 				version = 2,
 			},
@@ -1702,7 +2132,7 @@ local tbl =
 				mechanicTime = 146.4,
 				name = "白魔音嚎节制判定",
 				timelineIndex = 22,
-				timerOffset = -2,
+				timerOffset = -3,
 				uuid = "548515c7-f17b-f8c0-a4d3-09ea4b294616",
 				version = 2,
 			},
@@ -1754,12 +2184,73 @@ local tbl =
 				},
 				mechanicTime = 146.4,
 				name = "奶罩",
+				randomOffset = 2,
 				timelineIndex = 22,
 				timerEndOffset = -3,
+				timerOffset = -4,
 				timerStartOffset = -1,
 				uuid = "63616896-9fbc-bf71-a3cd-91af1d4208ef",
 				version = 2,
 			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 3569,
+							allowInterrupt = true,
+							castPosX = 100,
+							castPosY = -300,
+							castPosZ = 100,
+							conditions = 
+							{
+								
+								{
+									"a6c5993e-2c8e-2541-8414-278948d31cce",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWHM2_Healbar_Asylum",
+							ignoreWeaveRules = true,
+							isAreaTarget = true,
+							uuid = "3ddf60dd-c332-6d82-8ed0-b347a8031399",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 3569,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "a6c5993e-2c8e-2541-8414-278948d31cce",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 146.4,
+				name = "奶罩再尝试",
+				timeRange = true,
+				timelineIndex = 22,
+				timerEndOffset = 2,
+				timerOffset = -1,
+				timerStartOffset = -4,
+				uuid = "ee51eae6-7c8e-2e71-992b-a2bf62566f96",
+				version = 2,
+			},
+			inheritedIndex = 6,
 		},
 	},
 	[23] = 
@@ -1817,6 +2308,63 @@ local tbl =
 				uuid = "06835046-c4c5-86ea-baaf-e38f6c59b4b2",
 				version = 2,
 			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 3569,
+							allowInterrupt = true,
+							castPosX = 100,
+							castPosY = -300,
+							castPosZ = 100,
+							conditions = 
+							{
+								
+								{
+									"a6c5993e-2c8e-2541-8414-278948d31cce",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWHM2_Healbar_Asylum",
+							ignoreWeaveRules = true,
+							isAreaTarget = true,
+							uuid = "3ddf60dd-c332-6d82-8ed0-b347a8031399",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 3569,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "a6c5993e-2c8e-2541-8414-278948d31cce",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 159.6,
+				name = "奶罩再尝试",
+				timelineIndex = 23,
+				timerOffset = -10,
+				timerStartOffset = -10,
+				uuid = "c97844e8-bf3f-5cf1-bafa-05c2346355b7",
+				version = 2,
+			},
+			inheritedIndex = 7,
 		},
 		
 		{
@@ -1899,7 +2447,7 @@ local tbl =
 				name = "团血检测",
 				timeRange = true,
 				timelineIndex = 23,
-				timerStartOffset = -13,
+				timerStartOffset = -10,
 				uuid = "c20e37d8-eb7b-c708-8f15-71596d5df10c",
 				version = 2,
 			},
@@ -1934,7 +2482,7 @@ local tbl =
 				mechanicTime = 193.1,
 				name = "单盾",
 				timelineIndex = 33,
-				timerOffset = -4.5,
+				timerOffset = -9.5,
 				uuid = "08773dc3-3e10-76e1-9db2-3e4dd9b61976",
 				version = 2,
 			},
@@ -1991,6 +2539,7 @@ local tbl =
 				name = "坦克血量应急救疗",
 				timeRange = true,
 				timelineIndex = 33,
+				timerEndOffset = 5,
 				timerStartOffset = -5.5,
 				uuid = "fa53f942-93ac-f9a5-b94e-8b2a4227efe5",
 				version = 2,
@@ -2066,6 +2615,36 @@ local tbl =
 				timerOffset = -5,
 				timerStartOffset = -5,
 				uuid = "175ee778-0eee-26f7-ad2b-eb2724492caa",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWHM2_Healbar_Regen",
+							targetType = "Off Tank",
+							uuid = "f30e3ec4-23f6-2f19-a62b-3bbd911b2ff7",
+							variableIsHover = true,
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 193.1,
+				name = "再生",
+				timelineIndex = 33,
+				uuid = "2d5cb9cf-4316-83ee-aeca-31470cbf1e0b",
 				version = 2,
 			},
 		},
@@ -2286,8 +2865,204 @@ local tbl =
 				timeRange = true,
 				timelineIndex = 34,
 				timerEndOffset = 7,
-				timerStartOffset = 0.5,
+				timerStartOffset = -5.5,
 				uuid = "03c33f0e-eac7-1a3b-92ee-2f609a01818f",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWHM2_Healbar_Regen",
+							targetType = "Main Tank",
+							uuid = "f30e3ec4-23f6-2f19-a62b-3bbd911b2ff7",
+							variableIsHover = true,
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 200.2,
+				name = "再生",
+				timelineIndex = 34,
+				timerEndOffset = 10,
+				uuid = "dd404bf2-1c1d-61be-9977-d1d4d116828d",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							conditions = 
+							{
+								
+								{
+									"e692022f-0e77-2356-93a7-d61f2d64bda3",
+									true,
+								},
+								
+								{
+									"352facfd-e82b-5b8a-98e5-abbe9c5af962",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWHM2_Healbar_Tetra",
+							targetType = "Off Tank",
+							uuid = "468e7269-c1c7-2d92-b0f3-140057d2ec2e",
+							variableIsHover = true,
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 2,
+							hpValue = 70,
+							name = "ST血量判定",
+							partyTargetType = "Off Tank",
+							uuid = "e692022f-0e77-2356-93a7-d61f2d64bda3",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 3570,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "352facfd-e82b-5b8a-98e5-abbe9c5af962",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 200.2,
+				name = "再次治疗ST，如果倾泻的神名没有判定",
+				randomOffset = 8,
+				timeRange = true,
+				timelineIndex = 34,
+				timerEndOffset = 8,
+				timerOffset = -5,
+				timerStartOffset = -5,
+				uuid = "791fac15-8fee-b361-9a08-35ee42d0a2d0",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							conditions = 
+							{
+								
+								{
+									"612b05a5-beda-ebfa-b0e0-2a246f4408f1",
+									true,
+								},
+								
+								{
+									"fa0e30f9-69d8-6e1a-8826-33064ecc20f1",
+									true,
+								},
+								
+								{
+									"54439d78-5193-def7-9f71-699368679f89",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWHM2_Healbar_AfflatusSolace",
+							targetType = "Off Tank",
+							uuid = "c46a89e0-15ab-24f3-b828-b3530f9fa356",
+							variableIsHover = true,
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 2,
+							hpValue = 70,
+							name = "ST血量判定",
+							partyTargetType = "Off Tank",
+							uuid = "fa0e30f9-69d8-6e1a-8826-33064ecc20f1",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionID = 3570,
+							category = "Self",
+							conditionType = 6,
+							gaugeIndex = 2,
+							gaugeValue = 1,
+							uuid = "612b05a5-beda-ebfa-b0e0-2a246f4408f1",
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 3570,
+							category = "Self",
+							conditionType = 4,
+							uuid = "54439d78-5193-def7-9f71-699368679f89",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 200.2,
+				name = "再次治疗ST，使用蓝花",
+				timeRange = true,
+				timelineIndex = 34,
+				timerEndOffset = 8,
+				timerStartOffset = -5,
+				uuid = "87e09639-4297-3178-8a79-35273a6ab4f5",
 				version = 2,
 			},
 		},
@@ -2360,38 +3135,6 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
-							conditions = 
-							{
-								
-								{
-									"ccea0e7f-23b2-c566-b473-badd94f0dd4a",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWHM2_Healbar_PlenaryIndulgence",
-							uuid = "eb737b80-06dc-ce07-aa83-786c217f3725",
-							variableTogglesType = 3,
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							conditions = 
-							{
-								
-								{
-									"67954d82-cbaf-8397-b6f9-39ac0be9a878",
-									true,
-								},
-								
-								{
-									"76e6022b-eb2c-f0c8-b201-22a1961a0fef",
-									true,
-								},
-							},
 							gVar = "ACR_RikuWHM2_Healbar_AfflatusRapture",
 							uuid = "285526a0-3910-6589-990e-117b647a5955",
 							variableTogglesType = 3,
@@ -2401,46 +3144,9 @@ local tbl =
 				},
 				conditions = 
 				{
-					
-					{
-						data = 
-						{
-							actionID = 7433,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "ccea0e7f-23b2-c566-b473-badd94f0dd4a",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							actionCDValue = 1,
-							actionID = 7433,
-							category = "Self",
-							conditionType = 4,
-							name = "CDs>1",
-							uuid = "67954d82-cbaf-8397-b6f9-39ac0be9a878",
-							version = 2,
-						},
-					},
-					
-					{
-						data = 
-						{
-							category = "Self",
-							conditionType = 6,
-							gaugeIndex = 2,
-							gaugeValue = 1,
-							uuid = "76e6022b-eb2c-f0c8-b201-22a1961a0fef",
-							version = 2,
-						},
-					},
 				},
 				mechanicTime = 221.5,
-				name = "白膜全大赦打狂喜",
+				name = "白膜打狂喜",
 				timeRange = true,
 				timelineIndex = 37,
 				timerStartOffset = -4,
@@ -3114,7 +3820,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 6,
 							gaugeIndex = 3,
-							gaugeValue = 2,
+							gaugeValue = 3,
 							uuid = "1e6f0d42-2adc-8927-a834-73cd68d958b8",
 							version = 2,
 						},
@@ -3243,7 +3949,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 6,
 							gaugeIndex = 3,
-							gaugeValue = 2,
+							gaugeValue = 3,
 							uuid = "1e6f0d42-2adc-8927-a834-73cd68d958b8",
 							version = 2,
 						},
@@ -3372,7 +4078,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 6,
 							gaugeIndex = 3,
-							gaugeValue = 2,
+							gaugeValue = 3,
 							uuid = "1e6f0d42-2adc-8927-a834-73cd68d958b8",
 							version = 2,
 						},
@@ -3517,6 +4223,55 @@ local tbl =
 				version = 2,
 			},
 		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 16535,
+							conditions = 
+							{
+								
+								{
+									"4bd702b2-c01b-1d6d-a5c1-1276e5f65145",
+									true,
+								},
+							},
+							targetType = "Enemy",
+							uuid = "29174771-792e-9f0c-be1a-d8047501e4a2",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 6,
+							gaugeIndex = 3,
+							gaugeValue = 3,
+							uuid = "4bd702b2-c01b-1d6d-a5c1-1276e5f65145",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 270.3,
+				name = "Red Flower",
+				timelineIndex = 53,
+				timerOffset = -4,
+				uuid = "c3bc6333-8e4d-5927-a772-34ac3ef40fe0",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
 	},
 	[57] = 
 	{
@@ -3618,11 +4373,70 @@ local tbl =
 				name = "奶罩",
 				timeRange = true,
 				timelineIndex = 57,
-				timerEndOffset = 1,
-				timerStartOffset = -1,
+				timerEndOffset = 3,
+				timerStartOffset = -3,
 				uuid = "e536426b-c5bd-0d1f-a132-c3859cff4bec",
 				version = 2,
 			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 3569,
+							allowInterrupt = true,
+							castPosX = 100,
+							castPosY = -300,
+							castPosZ = 100,
+							conditions = 
+							{
+								
+								{
+									"a6c5993e-2c8e-2541-8414-278948d31cce",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWHM2_Healbar_Asylum",
+							ignoreWeaveRules = true,
+							isAreaTarget = true,
+							uuid = "3ddf60dd-c332-6d82-8ed0-b347a8031399",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 3569,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "a6c5993e-2c8e-2541-8414-278948d31cce",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 285.6,
+				name = "奶罩再尝试",
+				timeRange = true,
+				timelineIndex = 57,
+				timerEndOffset = 3,
+				timerOffset = -1,
+				timerStartOffset = -3,
+				uuid = "d4afd533-6737-0a61-8f5d-db82e7a505fa",
+				version = 2,
+			},
+			inheritedIndex = 4,
 		},
 		
 		{
@@ -3644,6 +4458,18 @@ local tbl =
 				},
 				conditions = 
 				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							comparator = 2,
+							conditionType = 6,
+							gaugeIndex = 2,
+							uuid = "7f1a7839-0135-7320-95a3-1cb9880b579e",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 285.6,
 				name = "医济",
@@ -3668,15 +4494,7 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
-							conditions = 
-							{
-								
-								{
-									"1e6f0d42-2adc-8927-a834-73cd68d958b8",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWHM2_Healbar_AfflatusRapture",
+							gVar = "ACR_RikuWHM2_Healbar_Medica2",
 							uuid = "1055b44b-7a60-958d-ab15-29ab8f4d7c08",
 							variableTogglesType = 3,
 							version = 2,
@@ -3690,20 +4508,119 @@ local tbl =
 						data = 
 						{
 							category = "Self",
+							comparator = 2,
 							conditionType = 6,
 							gaugeIndex = 2,
-							gaugeValue = 1,
-							uuid = "1e6f0d42-2adc-8927-a834-73cd68d958b8",
+							uuid = "7f1a7839-0135-7320-95a3-1cb9880b579e",
 							version = 2,
 						},
 					},
 				},
 				mechanicTime = 292.7,
-				name = "Blue Flower",
+				name = "医济",
+				timeRange = true,
 				timelineIndex = 58,
-				timerEndOffset = 10,
-				timerStartOffset = -10,
-				uuid = "a8a2f7d7-6cd2-10f9-b398-c4aaec842fd3",
+				timerEndOffset = 4,
+				uuid = "33a6af6b-69a6-efeb-9f26-5c52768dfd60",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							conditions = 
+							{
+								
+								{
+									"ccea0e7f-23b2-c566-b473-badd94f0dd4a",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWHM2_Healbar_PlenaryIndulgence",
+							uuid = "eb737b80-06dc-ce07-aa83-786c217f3725",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							conditions = 
+							{
+								
+								{
+									"67954d82-cbaf-8397-b6f9-39ac0be9a878",
+									true,
+								},
+								
+								{
+									"76e6022b-eb2c-f0c8-b201-22a1961a0fef",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWHM2_Healbar_AfflatusRapture",
+							uuid = "285526a0-3910-6589-990e-117b647a5955",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 7433,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "ccea0e7f-23b2-c566-b473-badd94f0dd4a",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							actionCDValue = 1,
+							actionID = 7433,
+							category = "Self",
+							conditionType = 4,
+							name = "CDs>1",
+							uuid = "67954d82-cbaf-8397-b6f9-39ac0be9a878",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 6,
+							gaugeIndex = 2,
+							gaugeValue = 1,
+							uuid = "76e6022b-eb2c-f0c8-b201-22a1961a0fef",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 292.7,
+				name = "白膜全大赦打狂喜",
+				timeRange = true,
+				timelineIndex = 58,
+				timerEndOffset = 3,
+				uuid = "7233e007-ea71-3ec1-82d9-71582f47f86a",
 				version = 2,
 			},
 		},
@@ -3955,6 +4872,37 @@ local tbl =
 				timerOffset = -5,
 				timerStartOffset = -5,
 				uuid = "e289774e-8ee9-a3c5-8736-da4b9edd69dd",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWHM2_Healbar_Regen",
+							targetType = "Off Tank",
+							uuid = "f30e3ec4-23f6-2f19-a62b-3bbd911b2ff7",
+							variableIsHover = true,
+							variableTogglesType = 3,
+							version = 2,
+						},
+						inheritedIndex = 1,
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 332.1,
+				name = "再生",
+				timelineIndex = 67,
+				uuid = "0767fc20-1fca-643e-9cd2-725324520368",
 				version = 2,
 			},
 		},
@@ -4313,7 +5261,8 @@ local tbl =
 				name = "白膜全大赦打狂喜",
 				timeRange = true,
 				timelineIndex = 69,
-				timerEndOffset = 5,
+				timerEndOffset = 6,
+				timerStartOffset = 3,
 				uuid = "410b6567-7f71-8a8b-b7ae-2ecd46da7e73",
 				version = 2,
 			},
@@ -4751,6 +5700,9 @@ local tbl =
 				version = 2,
 			},
 		},
+	},
+	[78] = 
+	{
 		
 		{
 			data = 
@@ -4796,15 +5748,74 @@ local tbl =
 						},
 					},
 				},
-				mechanicTime = 386.8,
+				mechanicTime = 390,
 				name = "奶罩",
-				timelineIndex = 77,
+				timelineIndex = 78,
 				timerEndOffset = -3,
 				timerOffset = 2,
 				timerStartOffset = -1,
-				uuid = "44949315-ad9a-b334-b98e-d4c1985f00ff",
+				uuid = "d65fbd5f-a8a9-0467-8fe3-8507909cc2cf",
 				version = 2,
 			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 3569,
+							allowInterrupt = true,
+							castPosX = 100,
+							castPosY = -300,
+							castPosZ = 100,
+							conditions = 
+							{
+								
+								{
+									"a6c5993e-2c8e-2541-8414-278948d31cce",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWHM2_Healbar_Asylum",
+							ignoreWeaveRules = true,
+							isAreaTarget = true,
+							uuid = "3ddf60dd-c332-6d82-8ed0-b347a8031399",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 3569,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "a6c5993e-2c8e-2541-8414-278948d31cce",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 390,
+				name = "奶罩再尝试",
+				timeRange = true,
+				timelineIndex = 78,
+				timerEndOffset = 8,
+				timerOffset = 2,
+				timerStartOffset = 2,
+				uuid = "96890726-3c24-3d5b-b562-d755a4b32d40",
+				version = 2,
+			},
+			inheritedIndex = 6,
 		},
 	},
 	[80] = 
@@ -4835,7 +5846,7 @@ local tbl =
 				mechanicTime = 417,
 				name = "水盾",
 				timelineIndex = 80,
-				timerOffset = -5,
+				timerOffset = -10,
 				uuid = "739dd7f9-4ade-a846-a123-8a206eed6b6b",
 				version = 2,
 			},
@@ -4853,7 +5864,7 @@ local tbl =
 						{
 							aType = "Variable",
 							gVar = "ACR_RikuWHM2_Healbar_AquaveilMouse",
-							targetType = "Off Tank",
+							targetType = "Main Tank",
 							uuid = "f82139f8-4c70-8a3b-991b-0fdc12372efc",
 							variableIsHover = true,
 							variableTogglesType = 3,
@@ -4867,7 +5878,7 @@ local tbl =
 				mechanicTime = 417,
 				name = "水盾2",
 				timelineIndex = 80,
-				timerOffset = -1,
+				timerOffset = -7,
 				uuid = "add92b6a-ed8a-0c07-afdf-0c4b175ce055",
 				version = 2,
 			},
@@ -5000,6 +6011,37 @@ local tbl =
 				timerOffset = -5,
 				timerStartOffset = -5,
 				uuid = "9e5364e8-0dfa-6ffa-84ad-7f84ef808a0a",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWHM2_Healbar_Regen",
+							targetType = "Off Tank",
+							uuid = "f30e3ec4-23f6-2f19-a62b-3bbd911b2ff7",
+							variableIsHover = true,
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 417,
+				name = "再生",
+				timelineIndex = 80,
+				timerEndOffset = 10,
+				uuid = "debabd9d-1c70-6b86-8086-d6c193bded7b",
 				version = 2,
 			},
 		},
@@ -6099,12 +7141,72 @@ local tbl =
 				},
 				mechanicTime = 474.7,
 				name = "奶罩",
+				timeRange = true,
 				timelineIndex = 91,
-				timerEndOffset = -3,
-				timerStartOffset = -1,
+				timerEndOffset = 2,
+				timerStartOffset = -3,
 				uuid = "4cb73ac9-8c5b-2353-87fc-32597df9dc35",
 				version = 2,
 			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 3569,
+							allowInterrupt = true,
+							castPosX = 100,
+							castPosY = -300,
+							castPosZ = 100,
+							conditions = 
+							{
+								
+								{
+									"a6c5993e-2c8e-2541-8414-278948d31cce",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWHM2_Healbar_Asylum",
+							ignoreWeaveRules = true,
+							isAreaTarget = true,
+							uuid = "3ddf60dd-c332-6d82-8ed0-b347a8031399",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 3569,
+							category = "Self",
+							comparator = 2,
+							conditionType = 4,
+							uuid = "a6c5993e-2c8e-2541-8414-278948d31cce",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 474.7,
+				name = "奶罩再尝试",
+				timeRange = true,
+				timelineIndex = 91,
+				timerEndOffset = 2,
+				timerOffset = 2,
+				timerStartOffset = -3,
+				uuid = "e6a94c7d-24e8-d9cc-a79f-4d688103de85",
+				version = 2,
+			},
+			inheritedIndex = 6,
 		},
 	},
 	[93] = 
@@ -6120,8 +7222,40 @@ local tbl =
 						data = 
 						{
 							aType = "Variable",
+							gVar = "ACR_RikuWHM2_Healbar_DivineBenison",
+							targetType = "Main Tank",
+							uuid = "8c4d78fa-fdff-5105-ae60-a54c159b9248",
+							variableIsHover = true,
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 482.7,
+				name = "水盾",
+				timelineIndex = 93,
+				timerOffset = -10,
+				uuid = "3383dd8d-a372-7618-9847-bc7855c712fd",
+				version = 2,
+			},
+			inheritedIndex = 2,
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
 							gVar = "ACR_RikuWHM2_Healbar_AquaveilMouse",
-							targetType = "Off Tank",
+							targetType = "Main Tank",
 							uuid = "f82139f8-4c70-8a3b-991b-0fdc12372efc",
 							variableIsHover = true,
 							variableTogglesType = 3,
@@ -6135,11 +7269,11 @@ local tbl =
 				mechanicTime = 482.7,
 				name = "水盾2",
 				timelineIndex = 93,
-				timerOffset = -1,
+				timerOffset = -7,
 				uuid = "213658a0-74ce-591c-8b9c-559b44cff08c",
 				version = 2,
 			},
-			inheritedIndex = 2,
+			inheritedIndex = 3,
 		},
 		
 		{
@@ -6195,38 +7329,7 @@ local tbl =
 				uuid = "66240e0e-f29f-3e50-915e-1ae96f5c3cd2",
 				version = 2,
 			},
-			inheritedIndex = 3,
-		},
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							gVar = "ACR_RikuWHM2_Healbar_DivineBenison",
-							targetType = "Main Tank",
-							uuid = "8c4d78fa-fdff-5105-ae60-a54c159b9248",
-							variableIsHover = true,
-							variableTogglesType = 3,
-							version = 2,
-						},
-					},
-				},
-				conditions = 
-				{
-				},
-				mechanicTime = 482.7,
-				name = "水盾",
-				timelineIndex = 93,
-				timerOffset = -5,
-				uuid = "3383dd8d-a372-7618-9847-bc7855c712fd",
-				version = 2,
-			},
+			inheritedIndex = 4,
 		},
 		
 		{
@@ -6355,6 +7458,38 @@ local tbl =
 				timerOffset = -5,
 				timerStartOffset = -5,
 				uuid = "fba9ce04-748a-4547-8f99-f072852c503f",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWHM2_Healbar_Regen",
+							targetType = "Off Tank",
+							uuid = "f30e3ec4-23f6-2f19-a62b-3bbd911b2ff7",
+							variableIsHover = true,
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 482.7,
+				name = "再生",
+				timeRange = true,
+				timelineIndex = 93,
+				timerEndOffset = 10,
+				uuid = "5945528e-ec26-8b7a-bcef-68d4e7a1b4f6",
 				version = 2,
 			},
 		},
@@ -7358,7 +8493,7 @@ local tbl =
 				mechanicTime = 544.1,
 				name = "水盾",
 				timelineIndex = 101,
-				timerOffset = -5,
+				timerOffset = -10,
 				uuid = "765d9e04-a8f3-a102-9f06-9303cf4d7ffa",
 				version = 2,
 			},
@@ -7376,7 +8511,7 @@ local tbl =
 						{
 							aType = "Variable",
 							gVar = "ACR_RikuWHM2_Healbar_AquaveilMouse",
-							targetType = "Off Tank",
+							targetType = "Main Tank",
 							uuid = "f82139f8-4c70-8a3b-991b-0fdc12372efc",
 							variableIsHover = true,
 							variableTogglesType = 3,
@@ -7390,7 +8525,7 @@ local tbl =
 				mechanicTime = 544.1,
 				name = "水盾2",
 				timelineIndex = 101,
-				timerOffset = -1,
+				timerOffset = -7,
 				uuid = "b3534f2f-8954-c19f-8292-92af7f9d0c26",
 				version = 2,
 			},
