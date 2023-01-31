@@ -146,65 +146,6 @@ local tbl =
 			},
 		},
 	},
-	[3] = 
-	{
-		
-		{
-			data = 
-			{
-				actions = 
-				{
-					
-					{
-						data = 
-						{
-							aType = "Variable",
-							castPosX = 100,
-							castPosY = -300,
-							castPosZ = 100,
-							conditions = 
-							{
-								
-								{
-									"cda6d361-47d4-82d0-8029-52d6d09a43ea",
-									true,
-								},
-							},
-							gVar = "ACR_RikuWHM2_Healbar_Lilybell",
-							isAreaTarget = true,
-							showPositionPreview = true,
-							uuid = "77cc2977-5fc3-2f53-a9be-0e0577995978",
-							variableTogglesType = 3,
-							version = 2,
-						},
-					},
-				},
-				conditions = 
-				{
-					
-					{
-						data = 
-						{
-							actionID = 25863,
-							category = "Self",
-							comparator = 2,
-							conditionType = 4,
-							uuid = "cda6d361-47d4-82d0-8029-52d6d09a43ea",
-							version = 2,
-						},
-					},
-				},
-				mechanicTime = 22,
-				name = "坟头草",
-				timeRange = true,
-				timelineIndex = 3,
-				timerOffset = -5,
-				timerStartOffset = -5,
-				uuid = "33f65c27-fc45-3b8d-ad7a-b22929281645",
-				version = 2,
-			},
-		},
-	},
 	[8] = 
 	{
 		
@@ -2080,8 +2021,41 @@ local tbl =
 				mechanicTime = 135.2,
 				name = "Red Flower",
 				timelineIndex = 18,
-				timerOffset = 3,
+				timerOffset = 8,
 				uuid = "942bcee3-9838-5532-99e7-bceab53d1ccb",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWHM2_Healbar_DivineBenison",
+							targetType = "Main Tank",
+							uuid = "c99456f4-45f9-b194-8bb0-9143eb142038",
+							variableIsHover = true,
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 135.2,
+				name = "单盾_Try",
+				timeRange = true,
+				timelineIndex = 18,
+				timerEndOffset = 5,
+				timerOffset = 1.5,
+				uuid = "7c1c025c-51e7-fce0-8141-d441df003331",
 				version = 2,
 			},
 		},
@@ -3820,7 +3794,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 6,
 							gaugeIndex = 3,
-							gaugeValue = 3,
+							gaugeValue = 2,
 							uuid = "1e6f0d42-2adc-8927-a834-73cd68d958b8",
 							version = 2,
 						},
@@ -3949,7 +3923,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 6,
 							gaugeIndex = 3,
-							gaugeValue = 3,
+							gaugeValue = 2,
 							uuid = "1e6f0d42-2adc-8927-a834-73cd68d958b8",
 							version = 2,
 						},
@@ -4078,7 +4052,7 @@ local tbl =
 							comparator = 2,
 							conditionType = 6,
 							gaugeIndex = 3,
-							gaugeValue = 3,
+							gaugeValue = 2,
 							uuid = "1e6f0d42-2adc-8927-a834-73cd68d958b8",
 							version = 2,
 						},
@@ -4091,6 +4065,39 @@ local tbl =
 				timerEndOffset = 10,
 				timerStartOffset = -10,
 				uuid = "a4f703cc-7d6c-7db1-a35a-10e2c18a8de1",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							gVar = "ACR_RikuWHM2_Healbar_DivineBenison",
+							targetType = "Main Tank",
+							uuid = "c99456f4-45f9-b194-8bb0-9143eb142038",
+							variableIsHover = true,
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+				},
+				mechanicTime = 267,
+				name = "单盾_Try",
+				timeRange = true,
+				timelineIndex = 52,
+				timerEndOffset = 10,
+				timerOffset = -2.5,
+				uuid = "02c9f6f2-5bd6-9039-a949-b5034ea862d8",
 				version = 2,
 			},
 		},
@@ -4238,6 +4245,11 @@ local tbl =
 									"1e6f0d42-2adc-8927-a834-73cd68d958b8",
 									true,
 								},
+								
+								{
+									"c46aefed-b219-4248-a7e6-1538db4fc546",
+									true,
+								},
 							},
 							gVar = "ACR_RikuWHM2_Healbar_AfflatusRapture",
 							uuid = "1055b44b-7a60-958d-ab15-29ab8f4d7c08",
@@ -4261,6 +4273,18 @@ local tbl =
 							version = 2,
 						},
 					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 6,
+							gaugeIndex = 3,
+							gaugeValue = 1,
+							uuid = "c46aefed-b219-4248-a7e6-1538db4fc546",
+							version = 2,
+						},
+					},
 				},
 				mechanicTime = 270.3,
 				name = "Blue Flower",
@@ -4271,6 +4295,61 @@ local tbl =
 				uuid = "0512c051-b9ad-eb59-8f42-c5230fecf7d9",
 				version = 2,
 			},
+		},
+	},
+	[54] = 
+	{
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							actionID = 16535,
+							conditions = 
+							{
+								
+								{
+									"4bd702b2-c01b-1d6d-a5c1-1276e5f65145",
+									true,
+								},
+							},
+							targetType = "Enemy",
+							uuid = "29174771-792e-9f0c-be1a-d8047501e4a2",
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 6,
+							gaugeIndex = 3,
+							gaugeValue = 3,
+							uuid = "4bd702b2-c01b-1d6d-a5c1-1276e5f65145",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 272.4,
+				name = "Red Flower",
+				timeRange = true,
+				timelineIndex = 54,
+				timerEndOffset = 2,
+				timerOffset = -4,
+				timerStartOffset = -4,
+				uuid = "74ec2c06-a6ed-0b64-8f60-34c21455d7d5",
+				version = 2,
+			},
+			inheritedIndex = 2,
 		},
 	},
 	[57] = 
@@ -5777,10 +5856,9 @@ local tbl =
 						data = 
 						{
 							category = "Self",
-							comparator = 2,
 							conditionType = 6,
 							gaugeIndex = 3,
-							gaugeValue = 2,
+							gaugeValue = 1,
 							uuid = "1e6f0d42-2adc-8927-a834-73cd68d958b8",
 							version = 2,
 						},
