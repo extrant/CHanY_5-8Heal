@@ -110,8 +110,9 @@ local tbl =
 				},
 				mechanicTime = 14.9,
 				name = "坟头草",
+				timeRange = true,
 				timelineIndex = 2,
-				timerEndOffset = 4,
+				timerEndOffset = 6,
 				timerStartOffset = -2,
 				uuid = "10903700-9e8d-22e2-b76f-e213e4e91efa",
 				version = 2,
@@ -2020,8 +2021,11 @@ local tbl =
 				},
 				mechanicTime = 135.2,
 				name = "Red Flower",
+				timeRange = true,
 				timelineIndex = 18,
+				timerEndOffset = 6,
 				timerOffset = 8,
+				timerStartOffset = 12,
 				uuid = "942bcee3-9838-5532-99e7-bceab53d1ccb",
 				version = 2,
 			},
@@ -4589,7 +4593,6 @@ local tbl =
 							category = "Self",
 							comparator = 2,
 							conditionType = 6,
-							gaugeIndex = 2,
 							uuid = "7f1a7839-0135-7320-95a3-1cb9880b579e",
 							version = 2,
 						},
@@ -4740,7 +4743,7 @@ local tbl =
 						{
 							category = "Self",
 							conditionType = 6,
-							gaugeIndex = 3,
+							gaugeIndex = 2,
 							gaugeValue = 1,
 							uuid = "1e6f0d42-2adc-8927-a834-73cd68d958b8",
 							version = 2,
@@ -5396,7 +5399,6 @@ local tbl =
 				timeRange = true,
 				timelineIndex = 69,
 				timerEndOffset = 6,
-				timerStartOffset = 3,
 				uuid = "410b6567-7f71-8a8b-b7ae-2ecd46da7e73",
 				version = 2,
 			},
@@ -5603,8 +5605,10 @@ local tbl =
 				},
 				mechanicTime = 373.9,
 				name = "Red Flower",
+				timeRange = true,
 				timelineIndex = 73,
 				timerOffset = -4,
+				timerStartOffset = -5,
 				uuid = "a6f0a00f-7982-8a7c-958e-cfa49e8fc1a7",
 				version = 2,
 			},
@@ -5757,7 +5761,7 @@ local tbl =
 							category = "Self",
 							comparator = 2,
 							conditionType = 2,
-							hpValue = 80,
+							hpValue = 95,
 							uuid = "fd403176-624b-abe4-92a4-b5c1a6385233",
 							version = 2,
 						},
@@ -5767,7 +5771,7 @@ local tbl =
 				name = "Blue Flower",
 				timelineIndex = 76,
 				timerOffset = 1,
-				uuid = "ff5fbe2d-72b9-58a9-985a-791b75fcbfb3",
+				uuid = "9dc15643-358d-d634-a08d-b27c11e2f80d",
 				version = 2,
 			},
 		},
@@ -5871,6 +5875,74 @@ local tbl =
 				timerEndOffset = 10,
 				timerStartOffset = 1,
 				uuid = "5b2303b3-1bfa-7bc5-98fe-f3ae3ad6666b",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							conditions = 
+							{
+								
+								{
+									"a0681b87-ecd7-a3a4-85aa-8fdccd5db0e0",
+									true,
+								},
+								
+								{
+									"fd403176-624b-abe4-92a4-b5c1a6385233",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWHM2_Healbar_AfflatusRapture",
+							uuid = "1055b44b-7a60-958d-ab15-29ab8f4d7c08",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Self",
+							conditionType = 6,
+							gaugeIndex = 2,
+							gaugeValue = 1,
+							uuid = "a0681b87-ecd7-a3a4-85aa-8fdccd5db0e0",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							comparator = 2,
+							conditionType = 2,
+							hpValue = 95,
+							uuid = "fd403176-624b-abe4-92a4-b5c1a6385233",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 386.8,
+				name = "Blue Flower",
+				timeRange = true,
+				timelineIndex = 77,
+				timerOffset = 1,
+				timerStartOffset = -3,
+				uuid = "f6a60870-2250-27de-8f70-f11d846b2e57",
 				version = 2,
 			},
 		},
@@ -6543,6 +6615,109 @@ local tbl =
 				timelineIndex = 82,
 				timerOffset = -2,
 				uuid = "d93c8d87-80bf-2f39-a7fa-ecf742bc1f17",
+				version = 2,
+			},
+		},
+		
+		{
+			data = 
+			{
+				actions = 
+				{
+					
+					{
+						data = 
+						{
+							aType = "Variable",
+							conditions = 
+							{
+								
+								{
+									"31db284a-503f-ac38-8f7b-46720bc31d65",
+									true,
+								},
+								
+								{
+									"0f4796eb-2985-801a-b04e-8f4ebeaefa7c",
+									true,
+								},
+							},
+							gVar = "ACR_RikuWHM2_Healbar_Medica",
+							uuid = "52a88ba4-93d8-ed3c-add8-efecff775f4a",
+							variableTogglesType = 3,
+							version = 2,
+						},
+					},
+				},
+				conditions = 
+				{
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 2,
+							hpValue = 80,
+							partyTargetSubType = "Number",
+							partyTargetType = "Detection Target",
+							uuid = "eb9bab9f-f539-1de7-be93-15201e964739",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Party",
+							comparator = 2,
+							conditionType = 4,
+							inRangeValue = 20,
+							uuid = "905f04ba-fd26-766c-a392-f1a50bdc4618",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Filter",
+							conditions = 
+							{
+								
+								{
+									"eb9bab9f-f539-1de7-be93-15201e964739",
+									true,
+								},
+								
+								{
+									"905f04ba-fd26-766c-a392-f1a50bdc4618",
+									true,
+								},
+							},
+							uuid = "31db284a-503f-ac38-8f7b-46720bc31d65",
+							version = 2,
+						},
+					},
+					
+					{
+						data = 
+						{
+							category = "Self",
+							comparator = 2,
+							conditionType = 6,
+							gaugeIndex = 2,
+							uuid = "0f4796eb-2985-801a-b04e-8f4ebeaefa7c",
+							version = 2,
+						},
+					},
+				},
+				mechanicTime = 435.4,
+				name = "团血检测",
+				timeRange = true,
+				timelineIndex = 82,
+				timerStartOffset = -5,
+				uuid = "757c9a94-a6bd-8d90-aa60-a34ffbb51ee3",
 				version = 2,
 			},
 		},
